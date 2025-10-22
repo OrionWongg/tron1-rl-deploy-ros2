@@ -1,0 +1,9 @@
+std_msgs/Header header
+string accid
+string title
+int64 timestamp
+string guid
+float64 x
+float64 y
+float64 z
+string result

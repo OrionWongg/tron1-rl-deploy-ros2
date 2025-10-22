@@ -1,21 +1,40 @@
 <?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>robot_hw</name>
   <version>0.0.0</version>
-  <description>The robot_hw package</description>
-  <maintainer email="limx@limxdynamics.com">limxdynamics</maintainer>
-  <author email="limx@limxdynamics.com">limxdynamics</author>
-  <license>TODO</license>
+  <description>Robot hardware control package</description>
+  <maintainer email="hernobire@gmail.com">Your Name</maintainer>
+  <license>MIT</license>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
+
   <depend>rclcpp</depend>
-  <depend>realtime_tools</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
   <depend>hardware_interface</depend>
+  <depend>controller_interface</depend>
   <depend>controller_manager</depend>
   <depend>controller_manager_msgs</depend>
+  <depend>realtime_tools</depend>
+  <depend>pluginlib</depend>
   <depend>urdf</depend>
-  <build_depend>limxsdk_lowlevel</build_depend>
-  <test_depend>ament_lint_auto</test_depend>
+
+  <depend>robot_msgs</depend>
+  <depend>controller_msgs</depend>
+  <build_depend>limxsdk_lowlevel</build_depend> <depend>websocketpp</depend>
+  <depend>nlohmann_json</depend>
+  <depend>Boost</depend>
+  <depend>openssl</depend>
+  <depend>pcl_conversions</depend>
+  <depend>libpcl-all-dev</depend> <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>
